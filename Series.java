@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Function{
+public class Series {
     public static void CalculateEquation(int a,int b,int n){
         int sum = a;
         for (int j = 0; j < n; j++) {
