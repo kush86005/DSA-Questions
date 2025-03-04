@@ -28,6 +28,12 @@ public class Array30 {
             System.out.print("No pairs found");
             return;
         }
+        Collections.sort(pair, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return Integer.compare(o1[0],o2[0]);
+            }
+        });
         System.out.print("Pairs are:- ");
         for(int i=0;i<pair.size();i++){
             System.out.print(Arrays.toString(pair.get(i))+" ");
