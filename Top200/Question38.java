@@ -3,8 +3,8 @@ import java.util.*;
 public class Question38 {
     public static int SecondLargest(int[] arr){
         int s=arr.length;
-        int largest=0;
-        int second=0;
+        int largest=Integer.MIN_VALUE;
+        int second=Integer.MIN_VALUE;
         for(int i=0;i<s;i++){
             if(arr[i]>largest){
                 second=largest;
