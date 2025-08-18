@@ -20,6 +20,7 @@ public class Question7 {
         Scanner sc=new Scanner(System.in);
         int s=sc.nextInt();
         sc.nextLine();
+        System.out.print("Enter elemets:- ");
         String[] strs=new String[s];
         for(int i=0;i<s;i++){
             strs[i]=sc.nextLine();
