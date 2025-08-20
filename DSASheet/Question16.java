@@ -45,3 +45,7 @@ public class Question16 {
         }
     }
 }
+
+
+//Time complexity: O(m × n)
+//Space complexity: O(m+n)
