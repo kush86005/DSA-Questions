@@ -17,7 +17,19 @@ public class Question14 {
                 count=1;
             }
         }
-        return element;
+        //You can directly return element after this if its given in the question that maximum element is always present.
+        count = 0;
+        for (int num : arr) {
+            if (num == element) {
+                count++;
+            }
+        }
+
+        if (count > n / 2) {
+            return element;
+        } else {
+            return -1; // No majority element
+        }
     }
     public static void main(String[] args){
         System.out.print("Enter size:- ");
@@ -32,5 +44,3 @@ public class Question14 {
         System.out.print(ans);
     }
 }
-
-//We consider in this that the majority element always exists. if its not given in the question then we have to verify later after the for loop in function.
