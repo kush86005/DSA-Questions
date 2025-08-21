@@ -1,19 +1,18 @@
 package DSASheet;
 import java.util.*;
 public class Temp {
-   public static int sorted(int[] arr,int target){
+   public static ArrayList<Integer> Dup(int[] arr) {
       HashMap<Integer,Integer> digit=new HashMap<>();
-      int count=0;
       int n=arr.length;
+      ArrayList<Integer> result=new ArrayList<>();
       for(int i=0;i<n;i++){
-         int tar=target-arr[i];
-
-         if(digit.containsKey(tar)){
-            count+=digit.get(tar);
-         }
          digit.put(arr[i],digit.getOrDefault(arr[i],0)+1);
+
+         if(digit.get(arr[i])>1){
+            result.add(arr[i]);
+         }
       }
-      return count;
+      return result;
    }
    public static void main(String[] args){
       System.out.print("Enter size:- ");
@@ -24,10 +23,7 @@ public class Temp {
       for(int i=0;i<n;i++){
          arr[i]=sc.nextInt();
       }
-      System.out.print("Enter target:- ");
-      int target=sc.nextInt();
-
-      int ans=sorted(arr,target);
-      System.out.print(ans);
+      ArrayList<Integer> result=Dup(arr);
+         System.out.print(result);
    }
 }
