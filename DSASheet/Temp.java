@@ -3,14 +3,14 @@ import java.util.*;
 public class Temp {
     public static int[] twosum(int[] arr,int target){
         HashMap<Integer,Integer> digit=new HashMap<>();
-        int[] result=new int[2];
         int n=arr.length;
+        int[] result=new int[2];
         for(int i=0;i<n;i++){
-            int tag=target-arr[i];
+            int tar=target-arr[i];
 
-            if(digit.containsKey(tag)){
+            if(digit.containsKey(tar)){
                 result[0]=i;
-                result[1]=digit.get(tag);
+                result[1]=digit.get(tar);
                 break;
             }
             digit.put(arr[i],i);
@@ -22,7 +22,7 @@ public class Temp {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int[] arr=new int[n];
-        System.out.print("Enter elements:- ");
+        System.out.print("Enter elements- ");
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
