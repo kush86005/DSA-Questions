@@ -21,7 +21,7 @@ public class Question15 {
                 i++;
                 ans=Math.max(ans,count);
             }else{
-                count=0;
+                count=1;
                 i++;
             }
         }
