@@ -1,0 +1,32 @@
+package DSAFinal;
+import java.util.*;
+public class Question17 {
+    public static int missingPositive(int[] arr){
+        int n=arr.length;
+
+        for(int i=0;i<n;i++){
+            while(arr[i]>0&&arr[i]<=n&&arr[arr[i]-1]!=arr[i]){
+                int temp=arr[arr[i]-1];
+                arr[arr[i]-1]=arr[i];
+                arr[i]=temp;
+            }
+        }
+        for(int i=0;i<n;i++){
+            if(arr[i]!=i+1){
+                return i+1;
+            }
+        }
+        return n+1;
+    }
+    public static void main(String[] args){
+        System.out.print("Enter size:- ");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        System.out.print("Enter elements:- ");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print(missingPositive(arr));
+    }
+}
