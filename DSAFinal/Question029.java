@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question29 {
+public class Question029 {
     public static List<List<Integer>> sum(int[] arr){
         int n=arr.length;
         Arrays.sort(arr);
