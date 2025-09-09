@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question4 {
+public class Question04 {
     public static ArrayList<Integer> dup(int[] arr){
         int n=arr.length;
         ArrayList<Integer> ans=new ArrayList<>();
