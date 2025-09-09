@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question28 {
+public class Question028 {
     public static int close(int[] arr,int target){
         int n=arr.length;
         Arrays.sort(arr);
