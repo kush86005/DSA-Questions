@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question13 {
+public class Question013 {
     public static int[] suffix(int[] arr){
         int n=arr.length;
         int[] ans=new int[n];
