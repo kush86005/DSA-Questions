@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question25 {
+public class Question025 {
     public static String reverse(String s){
         int n=s.length();
         StringBuilder sb=new StringBuilder();
