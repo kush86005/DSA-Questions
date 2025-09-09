@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question18 {
+public class Question018 {
     public static int trappingrainwater(int[] arr){
         int n=arr.length;
         int[] left=new int[n];
