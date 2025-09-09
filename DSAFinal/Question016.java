@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question16 {
+public class Question016 {
     public static int Longest(int[] arr){
         HashSet<Integer> set=new HashSet<>();
         for(int num:arr){
