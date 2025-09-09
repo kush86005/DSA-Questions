@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question20 {
+public class Question020 {
     public static boolean palindrome(String s){
         int n=s.length();
         int i=0;
