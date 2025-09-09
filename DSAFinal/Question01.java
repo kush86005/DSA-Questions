@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question1 {
+public class Question01 {
     public static int[] twoSum(int[] arr,int target){
         int n=arr.length;
         int[] res=new int[2];
