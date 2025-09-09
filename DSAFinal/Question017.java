@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question17 {
+public class Question017 {
     public static int missingPositive(int[] arr){
         int n=arr.length;
 
