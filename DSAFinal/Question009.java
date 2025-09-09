@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question09 {
+public class Question009 {
     public static void moveZero(int[] arr){
         int n=arr.length;
         int zero=0;
