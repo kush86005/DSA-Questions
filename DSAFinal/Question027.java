@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question27 {
+public class Question027 {
     public static int closest(int[] arr,int target){
         int n=arr.length;
         int closest=Integer.MIN_VALUE;
