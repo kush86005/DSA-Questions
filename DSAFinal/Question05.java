@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question5 {
+public class Question05 {
     public static boolean Anagram(String s,String t){
         int n=s.length();
         int[] alpha=new int[26];
