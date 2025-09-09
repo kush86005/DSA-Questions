@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question12 {
+public class Question012 {
     public static int[] frequent(int[] arr,int k){
         int n=arr.length;
         HashMap<Integer,Integer> digit=new HashMap<>();
