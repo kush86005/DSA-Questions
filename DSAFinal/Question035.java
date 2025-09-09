@@ -1,9 +1,9 @@
 package DSAFinal;
 import java.util.*;
-public class Question35 {
+public class Question035 {
     Stack<Integer> stack;
     Stack<Integer> stuck;
-    public Question35(){
+    public Question035(){
         stack=new Stack<>();
         stuck=new stuck<>();
     }
