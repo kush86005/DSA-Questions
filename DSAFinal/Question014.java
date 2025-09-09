@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question14 {
+public class Question014 {
     public static int sum(int[] arr,int k){
         int sum=0;
         int ans=0;
