@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question15 {
+public class Question015 {
     public static int sequence(int[] arr){
         Map<Integer,Integer> digit=new TreeMap<>();
         int n=arr.length;
