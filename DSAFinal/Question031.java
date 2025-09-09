@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question31 {
+public class Question031 {
     public static ArrayList<Integer> subarray(int[] arr,int k){
         int n=arr.length;
         ArrayList<Integer> result=new ArrayList<>();
