@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question02 {
+public class Question002 {
     public static int twoSum(int[] arr,int target) {
         int n = arr.length;
         HashMap<Integer, Integer> digit = new HashMap<>();
