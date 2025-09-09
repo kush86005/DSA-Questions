@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question30 {
+public class Question030 {
     public static int Longest(String s){
         int n=s.length();
         HashSet<Character> digit=new HashSet<>();
