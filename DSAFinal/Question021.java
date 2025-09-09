@@ -1,7 +1,7 @@
 package DSAFinal;
 import java.util.*;
 
-public class Question21 {
+public class Question021 {
     public static void mergeSorted(int m, int n, int[] num1, int[] num2) {
         int i = m - 1;
         int j = n - 1;
