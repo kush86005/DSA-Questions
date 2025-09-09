@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question8 {
+public class Question08 {
     public static int majority(int[] arr){
         int n=arr.length;
         int candidate=arr[0];
