@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question6 {
+public class Question06 {
     public static boolean Anagram(String s,String t){
         int n=s.length();
         HashMap<Character,Integer> digit=new HashMap<>();
