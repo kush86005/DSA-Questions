@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question03 {
+public class Question003 {
     public static boolean dup(int[] arr){
         int n=arr.length;
         HashMap<Integer,Integer> digit=new HashMap<>();
