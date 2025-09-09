@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question10 {
+public class Question010 {
     public static List<List<String>> groupAnagram(String[] str){
         int n=str.length;
         HashMap<String,List<String>> digit=new HashMap<>();
