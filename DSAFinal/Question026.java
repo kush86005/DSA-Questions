@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question26 {
+public class Question026 {
     public static int container(int[] arr){
         int i=0;
         int j=arr.length-1;
