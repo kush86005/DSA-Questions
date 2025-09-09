@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question22 {
+public class Question022 {
     public static int stock(int[] arr){
         int n=arr.length;
         int min=Integer.MAX_VALUE;
