@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question11 {
+public class Question011 {
     public static ArrayList<Integer> product(int[] arr,int k){
         int n=arr.length;
         HashMap<Integer,Integer> digit=new HashMap<>();
