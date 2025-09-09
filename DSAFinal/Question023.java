@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question23 {
+public class Question023 {
     public static int stock(int[] arr){
         int n=arr.length;
         int ans=0;
