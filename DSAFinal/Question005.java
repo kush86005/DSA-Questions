@@ -1,7 +1,7 @@
 package DSAFinal;
 import java.util.*;
 
-public class Question05 {
+public class Question005 {
     public static boolean isAnagram(String s, String t) {
         // Remove this if you want case-sensitive anagram check
         s = s.toLowerCase();
