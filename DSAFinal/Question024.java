@@ -1,6 +1,6 @@
 package DSAFinal;
 import java.util.*;
-public class Question24 {
+public class Question024 {
     public static int[] square(int[] arr){
         int i=0;
         int j=arr.length-1;
