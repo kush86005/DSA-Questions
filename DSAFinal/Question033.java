@@ -4,7 +4,7 @@ public class Question033 {
     Stack<Integer> stack;
     Stack<Integer> minstack;
 
-    public Minstack(){
+    public Question033(){
         stack=new Stack<>();
         minstack=new Stack<>();
     }
