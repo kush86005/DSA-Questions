@@ -20,4 +20,5 @@ public class Question041 {
         int ans=coins(n);
         System.out.print(ans);
     }
+
 }
