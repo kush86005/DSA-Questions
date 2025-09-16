@@ -8,7 +8,7 @@ public class Question047 {
         while(left<=right){
             int mid=left+(right-left)/2;
 
-            int matrix=mat[mid/c][mid%c];
+            int matrix=mat[mid/c][mid%c];            //(mid/c) gives row mid and (mid%c) gives col mid. thats how we calculate row and col
 
             if(matrix==x){
                 return true;
