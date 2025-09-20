@@ -1,7 +1,7 @@
 package LinkedList;
 import java.util.*;
 
-public class Question02 {
+public class Question03 {
     public static class Node {
         String data;
         Node next;
@@ -19,11 +19,8 @@ public class Question02 {
         if (head == null) {
             head = val;
         } else {
-            Node temp = head;
-            while (temp.next != null) {
-                temp = temp.next;
-            }
-            temp.next = val;
+            val.next=head;
+            head=val;
         }
     }
 
@@ -54,3 +51,4 @@ public class Question02 {
         Print();
     }
 }
+
