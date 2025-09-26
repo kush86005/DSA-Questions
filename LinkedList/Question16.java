@@ -10,7 +10,7 @@ public class Question16 {
         }
     }
     static Node head=null;
-    static Node tail=null
+    static Node tail=null;
     public static void insert(int data){
         Node val=new Node(data);
         if(head==null){
