@@ -41,7 +41,7 @@ public class Question20 {
         }
         Node first=head;
         Node second=prev;
-        int ans=0;
+        int ans=Integer.MIN_VALUE;
         while(second!=null){
             int max=first.data+second.data;
             ans=Math.max(ans,max);
