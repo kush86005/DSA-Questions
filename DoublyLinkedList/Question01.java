@@ -37,6 +37,17 @@ public class Question01 {
             }
         }
     }
+    public static void insertstart(int data){
+        Node val=new Node(data);
+        if(head==null){
+            head=val;
+        }else{
+            val.next=head;
+            val.prev=null;
+            head.prev=val;
+            head=val;
+        }
+    }
     public static void main(String[] args){
         System.out.print("Enter number of nodes:- ");
         Scanner sc=new Scanner(System.in);
