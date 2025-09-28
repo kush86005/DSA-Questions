@@ -10,5 +10,3 @@ public class Question01 {
     In a fixed-size stack, such as one implemented with an array,
     once the number of elements exceeds the size of the array, you can't add any more elements, resulting in stack overflow.*/
     }
-
-}
