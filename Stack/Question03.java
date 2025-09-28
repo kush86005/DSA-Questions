@@ -1,6 +1,6 @@
 package Stack;
 
-public class Question02 {
+public class Question03 {
     // Node class for Linked List
     static class Node {
         int data;
