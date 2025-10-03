@@ -29,7 +29,7 @@ public class Question06 {
     }
     public static int Max(Node root){
         if(root==null){
-            return 0;
+            return Integer.MIN_VALUE;
         }
         int a=root.data;
         int b=Max(root.left);
