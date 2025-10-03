@@ -1,5 +1,7 @@
 package Trees;
 import java.util.*;
+//This is Level Order Traversal which is used to find (Shortest path, BFS problems) implemented using recursion
+//Iterative implementation is also asked in interview to check understanding (Do practice that)
 public class Question01 {
     public static class Node{
         int data;
