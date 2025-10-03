@@ -1,6 +1,7 @@
 package Trees;
 import java.util.*;
-//This is Pre Order traversal which is used in store the binary tree into a inorder array
+//Inorder traversal: Used to retrieve elements of a binary search tree in sorted order.
+//Left → Root → Right
 public class Question02 {
     public static class Node{
         int data;
@@ -13,8 +14,7 @@ public class Question02 {
         }
     }
     static Node root=null;
-    public static void insert(int data)
-    {
+    public static void insert(int data){
         root=recursion(root,data);
     }
     private static Node recursion(Node root,int data){
@@ -29,24 +29,17 @@ public class Question02 {
         }
         return root;
     }
-    public static void display(Node root){
+    public static void inorderdisplay(Node root){
         if(root==null){
             return;
         }
-        System.out.print(root.data+" -> ");
-        if(root.left!=null){
-            System.out.print(root.left.data+" ");
-        }
-        if(root.right!=null){
-            System.out.print(root.right.data+" ");
-        }
-        System.out.println();
-        display(root.left);
-        display(root.right);
+        inorderdisplay(root.left);
+        System.out.print(root.data+" ");
+        inorderdisplay(root.right);
     }
 
     public static void main(String[] args) {
-        System.out.print("Enter size:- ");
+        System.out.print("Enter number of nodes:- ");
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         System.out.print("Enter elements:- ");
@@ -54,7 +47,11 @@ public class Question02 {
             int data=sc.nextInt();
             insert(data);
         }
-        display(root);
+        if(root==null){
+            System.out.print("The tree is empty");
+        }else{
+         System.out.print("Inorder traversal:- ");
+         inorderdisplay(root);
+        }
     }
-}
-
+ }
