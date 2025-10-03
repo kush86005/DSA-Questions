@@ -34,6 +34,7 @@ public class Question08 {
         }
         if(n==1){
             System.out.print(root.data+" ");
+            return;
         }else {
             levelprint(root.left, n - 1);
             levelprint(root.right, n - 1);
