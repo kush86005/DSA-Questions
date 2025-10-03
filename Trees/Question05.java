@@ -12,10 +12,8 @@ public class Question05 {
         }
     }
     static Node root=null;
-    static int count=0;
     public static void insert(int data){
         root=recursion(root,data);
-        count++;
     }
     private static Node recursion(Node root,int data){
         if(root==null){
@@ -28,6 +26,12 @@ public class Question05 {
             root.right=recursion(root.right,data);
         }
         return root;
+    }
+    public static int size(Node root){
+        if(root==null){
+            return 0;
+        }
+        return size(root.left)+size(root.right)+1;
     }
     public static int sumofval(Node root){
         if(root==null){
@@ -44,6 +48,7 @@ public class Question05 {
             int val=sc.nextInt();
             insert(val);
         }
+        int count=size(root);
         System.out.println("Size is:- "+count);
         int ans=sumofval(root);
         System.out.print("Sum is:- "+ans);
