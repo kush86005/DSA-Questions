@@ -31,10 +31,11 @@ public class Question06 {
         if(root==null){
             return 0;
         }
-        while(root.right!=null){
-            root=root.right;
-        }
-        return root.data;
+        int a=root.data;
+        int b=Max(root.left);
+        int c=Max(root.right);
+        int max=Math.max(a,Math.max(b,c));
+        return max;
     }
 
     public static void main(String[] args) {
