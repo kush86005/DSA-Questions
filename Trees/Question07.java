@@ -13,19 +13,28 @@ public class Question07 {
     }
     static Node root=null;
     public static void insert(int data){
-        root=recursion(root,data);
-    }
-    private static Node recursion(Node root,int data){
+        Node node=new Node(data);
         if(root==null){
-            return new Node(data);
+            root=node;
+            return;
         }
-        if(data<root.data){
-            root.left=recursion(root.left,data);
+        Queue<Node> queue=new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            Node current=queue.poll();
+            if(current.left==null){
+                current.left=node;
+                return;
+            }else{
+                queue.add(current.left);
+            }
+            if(current.right==null){
+                current.right=node;
+                return;
+            }else{
+                queue.add(current.right);
+            }
         }
-        if(data>root.data){
-            root.right=recursion(root.right,data);
-        }
-        return root;
     }
     public static int minvalue(Node root){
         if(root==null){
