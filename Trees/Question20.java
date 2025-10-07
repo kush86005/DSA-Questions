@@ -1,5 +1,6 @@
 package Trees;
 import java.util.*;
+//We can also use Queue here instead of stack but the question mentiones to do the replacement inplace
 public class Question20 {
     public static class Node{
         int data;
