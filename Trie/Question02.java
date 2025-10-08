@@ -34,7 +34,7 @@ public class Question02 {
             }
             current=current.children[ind];
         }
-        return true;
+        return current.eow;
     }
 
     public static void main(String[] args) {
