@@ -6,7 +6,8 @@ public class Question01 {
         boolean eow;
 
         Node(){
-            children=new Node[26];
+            children=new Node[26];  // This is for only small aplhabets, for considering all possible character in java, use(256)
+                                    //use 256 size only if mentioned, otherwise go with 26
             for(int i=0;i<26;i++){
                 children[i]=null;
             }
@@ -16,7 +17,7 @@ public class Question01 {
     static Node root=new Node();
     public static void insert(String word){
         Node current=root;
-        for(int i=0;i<word.length;i++){
+        for(int i=0;i<word.length();i++){
             int ind=word.charAt(i)-'a';
             if(current.children[ind]==null) {
                 current.children[ind] = new Node();
