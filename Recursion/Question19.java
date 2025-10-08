@@ -14,6 +14,8 @@ public class Question19 {
         count++;
         count+=helper(n-1,aux,to,from);
         return count;
+        //You are not physically moving the disks;
+        // you are just counting the minimum number of moves required to theoretically solve the Tower of Hanoi puzzle for n disks.
     }
     public static void main(String[] args){
         System.out.print("Enter n:- ");
