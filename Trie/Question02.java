@@ -13,7 +13,7 @@ public class Question02 {
             eow=false;
         }
     }
-    static Node root=null;
+    static Node root=new Node();
     public static void insert(String word){
         Node current=root;
         for(int i=0;i<word.length();i++){
