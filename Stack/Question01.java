@@ -9,4 +9,9 @@ public class Question01 {
 
     In a fixed-size stack, such as one implemented with an array,
     once the number of elements exceeds the size of the array, you can't add any more elements, resulting in stack overflow.*/
+
+    /*Deep recursion is the most common cause of stack overflows. Each recursive call adds a new frame to the stack,
+     which holds the function’s local variables and return address.
+     If the recursion doesn’t have a proper base case (or termination condition), the stack will continue to grow until it overflows.
+     */
     }
