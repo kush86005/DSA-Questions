@@ -4,16 +4,19 @@ import java.util.*;
 //A monotonic increasing stack means the values inside the stack always go up (each new element is greater than the one before it).
 //A monotonic decreasing stack means the values always go down.
 public class Question10 {
-    public static int[] monotonicStack(int[] arr){
+    public static int[] nextgreater(int[] arr){
         Stack<Integer> stack=new Stack<>();
         int[] ans=new int[arr.length];
-        Arrays.fill(ans,-1);
-        for(int i=0;i<arr.length;i++){
-            while(!stack.isEmpty()&&arr[i]>arr[stack.peek()]){
-                int index=stack.pop();
-                ans[index]=arr[i];
+        for(int i=arr.length-1;i>=0;i--){
+            while(!stack.isEmpty()&&stack.peek()<=arr[i]){
+                stack.pop();
             }
-            stack.push(i);
+            if(stack.isEmpty()){
+                ans[i]=-1;
+            }else{
+                ans[i]=stack.peek();
+            }
+            stack.push(arr[i]);
         }
         return ans;
     }
@@ -27,7 +30,7 @@ public class Question10 {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        int[] ans=monotonicStack(arr);
+        int[] ans=nextgreater(arr);
         for(int i=0;i<ans.length;i++){
             System.out.print(ans[i]+" ");
         }
