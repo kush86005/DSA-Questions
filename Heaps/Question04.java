@@ -1,7 +1,7 @@
 package Heaps;
 import java.util.*;
 
-public class Question03 {
+public class Question04 {
     // Heapify function for max heap
     public static void heapify(int[] arr, int n, int i) {
         int largest = i;
