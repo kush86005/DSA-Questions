@@ -1,6 +1,6 @@
 package Queue;
 import java.util.*;
-public class CircularQueueExample {
+public class Question02 {
     public class CircularQueue {
         int front;
         int rear;
