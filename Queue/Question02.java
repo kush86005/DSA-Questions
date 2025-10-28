@@ -1,7 +1,10 @@
 package Queue;
 import java.util.*;
+
 public class Question02 {
-    public class CircularQueue {
+
+    // Make CircularQueue static so it can be used from main
+    public static class CircularQueue {
         int front;
         int rear;
         int size;
@@ -65,8 +68,7 @@ public class Question02 {
     }
 
     public static void main(String[] args) {
-        CircularQueueExample outer = new CircularQueueExample();
-        CircularQueue q = outer.new CircularQueue(5);
+        CircularQueue q = new CircularQueue(5);
 
         q.offer(10);
         q.offer(20);
