@@ -1,26 +1,26 @@
 package PriorityQueue;
 import java.util.*;
-class student implements Comparable<student>{
-    String name;
-    int marks;
-
-    student(String name,int marks){
-        this.name=name;
-        this.marks=marks;
-    }
-    @Override
-    public int compareTo(student that){
-        if(that.marks==this.marks){
-            return this.name.compareTo(that.name); //If students marks match, return them by comparing name
-        }
-        return Integer.compare(that.marks,this.marks);
-    }
-    @Override
-    public String toString(){
-        return name+" ("+marks+")";
-    }
-}
 public class Question03 {
+    static class student implements Comparable<student>{
+        String name;
+        int marks;
+
+        student(String name,int marks){
+            this.name=name;
+            this.marks=marks;
+        }
+        @Override
+        public int compareTo(student that){
+            if(that.marks==this.marks){
+                return this.name.compareTo(that.name); //If students marks match, return them by comparing name
+            }
+            return Integer.compare(that.marks,this.marks);
+        }
+        @Override
+        public String toString(){
+            return name+" ("+marks+")";
+        }
+    }
     public static void main(String[] args) {
         System.out.print("Enter number of students:- ");
         Scanner sc=new Scanner(System.in);
