@@ -9,8 +9,11 @@ class student implements Comparable<student>{
         this.marks=marks;
     }
     @Override
-    public int compareTo(student other){
-        return Integer.compare(other.marks,this.marks);
+    public int compareTo(student that){
+        if(that.marks==this.marks){
+            return this.name.compareTo(that.name); //If students marks match, return them by comparing name
+        }
+        return Integer.compare(that.marks,this.marks);
     }
     @Override
     public String toString(){
