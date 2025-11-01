@@ -27,7 +27,7 @@ public class Question03 {
             if(!visited[i]){
                 queue.offer(i);
                 visited[i]=true;
-                System.out.print("BFS traversal begins from:- "+i+": ");
+                System.out.print("BFS traversal from:- "+i+": ");
 
                 while(!queue.isEmpty()){
                     int node=queue.poll();
