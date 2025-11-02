@@ -1,5 +1,7 @@
 package Graphs;
 import java.util.*;
+//Note:- Dijkstra's Algo(Uses greedy approach)
+//       Bellman Ford(Uses DP approach)
 public class Question11 {
     /* 🧠 Bellman–Ford Algorithm (Easy Explanation)
 🔹 What It Does
