@@ -1,5 +1,6 @@
 package DynamicProgramming;
 import java.util.*;
+//More optimized solution using Binary Search
 public class Question17 {
     public static int longestIncreasingSubsequence(int[] nums) {
         int n = nums.length;
