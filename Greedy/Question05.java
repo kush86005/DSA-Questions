@@ -1,17 +1,16 @@
 package Greedy;
 import java.util.*;
-class Item {
-    double value, weight;
-    public Item(double value, double weight) {
-        this.value = value;
-        this.weight = weight;
-    }
-    public double partial() {
-        return value / weight;
-    }
-}
-
 public class Question05 {
+    static class Item {
+        double value, weight;
+        public Item(double value, double weight) {
+            this.value = value;
+            this.weight = weight;
+        }
+        public double partial() {
+            return value / weight;
+        }
+    }
     public static double fractionalKnapsack(int[] wt, int[] val, int capacity) {
         ArrayList<Item> list = new ArrayList<>();
         for (int i = 0; i < wt.length; i++) {
