@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question03 {
+public class Question003 {
     public static boolean duplicate(int[] arr){
         HashSet<Integer> set=new HashSet<>();
         for(int nums:arr){
