@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question05 {
+public class Question005 {
     public static boolean anagram(String s,String t){
         HashMap<Character,Integer> map=new HashMap<>();
         for(int i=0;i<s.length();i++){
