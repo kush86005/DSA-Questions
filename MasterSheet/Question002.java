@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question02 {
+public class Question002 {
     public static int twoSum(int[] arr,int target){
         HashMap<Integer,Integer> map=new HashMap<>();
         int count=0;
