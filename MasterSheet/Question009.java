@@ -1,7 +1,7 @@
 package MasterSheet;
-import java.util.*;
+
 //Time complexity for fixed 9*9 matrix is O(1) but for n*n matrix it will be O(n^3)
-public class Question09 {
+public class Question009 {
     public static boolean helper(char[][] board,int row,int col,char num) {
         for(int i=0;i<9;i++){
             if(i!=col&&board[row][i]==num) {
