@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question08 {
+
+public class Question008 {
     public static int[] prefixsum(int[] arr){
         int n=arr.length;
         int[] ans=new int[n];
