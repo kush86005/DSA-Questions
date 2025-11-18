@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question10 {
+public class Question010 {
     public static int longest(int[] arr){
         HashSet<Integer> set=new HashSet<>();
         for(int num:arr){
