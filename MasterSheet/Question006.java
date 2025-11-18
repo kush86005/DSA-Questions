@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question06 {
+public class Question006 {
     public static List<List<String>> anagram(String[] str){
         HashMap<String,ArrayList<String>> map=new HashMap<>();
         for(int i=0;i<str.length;i++){
