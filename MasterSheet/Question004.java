@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question04 {
+public class Question004 {
     public static ArrayList<Integer> duplicate(int[] arr){
         HashMap<Integer,Integer> map=new HashMap<>();
         ArrayList<Integer> ans=new ArrayList<>();
