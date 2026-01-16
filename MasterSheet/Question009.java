@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question011 {
+public class Question009 {
     public static int subarray(int[] arr,int k){
         int sum=0;
         int ans=0;
