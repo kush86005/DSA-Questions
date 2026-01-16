@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question024 {
+public class Question021 {
     public static int reverse(String[] token){
         Stack<Integer> stack=new Stack<>();
         for(String count:token){
