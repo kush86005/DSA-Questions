@@ -1,21 +1,26 @@
 package MasterSheet;
 import java.util.*;
 public class Question003 {
-    public static ArrayList<Integer> duplicate(int[] arr){
-        HashMap<Integer,Integer> map=new HashMap<>();
-        ArrayList<Integer> ans=new ArrayList<>();
-        for(int nums:arr){
-            map.put(nums,map.getOrDefault(nums,0)+1);
-
-            if(map.get(nums)>1){
-                ans.add(nums);
-            }
+    public static boolean anagram(String s,String t){
+        HashMap<Character,Integer> map=new HashMap<>();
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            map.put(c,map.getOrDefault(c,0)+1);
         }
-        return ans;
+        for(int i=0;i<t.length();i++){
+            char c=t.charAt(i);
+            if(!map.containsKey(c)||map.get(c)<0){
+                return false;
+            }
+            int val=map.get(c)-1;
+            map.put(c,val);
+        }
+        return true;
     }
     public static void main(String[] args) {
-        int[] arr=new int[]{2, 3, 1, 2, 3};
-        ArrayList<Integer> ans=duplicate(arr);
-        System.out.print(ans);
+        String s="rat";
+        String t="car";
+        boolean isTrue=anagram(s,t);
+        System.out.print(isTrue);
     }
 }
