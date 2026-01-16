@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question025 {
+public class Question022 {
     public static int[] temp(int[] arr){
         int n=arr.length;
         Stack<Integer> stack=new Stack<>();
