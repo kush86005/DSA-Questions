@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question016 {
+public class Question014 {
     public static int substring(String s){
         HashSet<Character> set=new HashSet<>();
         int i=0;
