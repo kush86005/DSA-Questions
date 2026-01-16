@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question026 {
+public class Question023 {
     public static int carFleet(int target, int[] position, int[] speed) {
         int n=position.length;
         double[][] car=new double[n][2];
