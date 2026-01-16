@@ -1,7 +1,7 @@
 package MasterSheet;
 import java.util.*;
 import java.util.AbstractMap.SimpleEntry;
-public class Question023 {
+public class Question020 {
 
     static class MinStack {
         Stack<SimpleEntry<Integer, Integer>> stack;
