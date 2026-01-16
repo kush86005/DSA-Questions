@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question007 {
+public class Question005 {
     public static ArrayList<Integer> freq(int[] arr,int k){
         HashMap<Integer,Integer> map=new HashMap<>();
         for(int nums:arr){
