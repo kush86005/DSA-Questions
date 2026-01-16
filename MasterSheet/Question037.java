@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question039 {
+
+public class Question037 {
     public static class Node{
         int data;
         Node next;
@@ -33,7 +33,7 @@ public class Question039 {
         return slow.data;
     }
     public static void main(String[] args) {
-        Question039 list = new Question039();
+        Question037 list = new Question037();
 
         list.insert(1);
         list.insert(2);
