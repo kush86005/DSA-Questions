@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question036 {
+
+public class Question034 {
     public static class Node{
         int data;
         Node next;
