@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question014 {
+
+public class Question013 {
     public static int profit(int[] arr){
         int n=arr.length;
         int maxprofit=0;
