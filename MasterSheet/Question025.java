@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question027 {
+public class Question025 {
     public static int binary(int[] arr,int target){
         int n=arr.length;
         int i=0;
