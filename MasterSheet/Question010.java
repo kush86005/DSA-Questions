@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question012 {
+
+public class Question010 {
     public static boolean palindrome(String s){
         StringBuilder sb=new StringBuilder();
         for(int i=0;i<s.length();i++){
