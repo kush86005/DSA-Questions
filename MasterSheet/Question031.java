@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question033 {
+
+public class Question031 {
     public static int minimum(int[] arr){
         int n=arr.length;
         int i=0;
