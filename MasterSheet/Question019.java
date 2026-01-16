@@ -1,6 +1,6 @@
 package MasterSheet;
 import java.util.*;
-public class Question022 {
+public class Question019 {
     public static boolean valid(String s){
         Stack<Character> stack=new Stack<>();
         int n=s.length();
