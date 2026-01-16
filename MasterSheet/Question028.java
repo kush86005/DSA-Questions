@@ -1,6 +1,6 @@
 package MasterSheet;
-import java.util.*;
-public class Question030 {
+
+public class Question028 {
     public static int rotated(int[] arr,int target){
         int n=arr.length;
         int i=0;
