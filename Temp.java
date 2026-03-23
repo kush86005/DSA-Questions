@@ -1,30 +1,66 @@
 import java.util.*;
 
 public class Temp{
-    public static boolean palindrome(String s){
-        StringBuilder str=new StringBuilder();
-        int n=s.length();
-        for(int i=0;i<n;i++){
-            char ch=s.charAt(i);
-            if(Character.isLetterOrDigit(ch)){
-                str.append(Character.toLowerCase(ch));
-            }
+    public static class Node{
+        int data;
+        Node next;
+
+        Node(int data){
+            this.data=data;
+            this.next=null;
         }
-        int i=0;
-        int j=str.length()-1;
-        while(i<j){
-            if(str.charAt(i)!=str.charAt(j)){
-                return false;
-            }else{
-                i++;
-                j--;
-            }
-        }
-        return true;
     }
+    static Node head=null;
+    public static void insert(int data){
+        Node val=new Node(data);
+        if(head==null){
+            head=val;
+        }else{
+            Node temp=head;
+            while(temp.next!=null){
+                temp=temp.next;
+            }
+            temp.next=val;
+        }
+    }
+    public static Node reverse(Node node){
+        if(node==null) {
+            return null;
+        }
+
+        Node prev=null;
+        Node curr=node;
+        while(curr!=null){
+            Node next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        return prev;
+    }
+    public static void print(Node node){
+        if(node==null){
+            System.out.print("Emoty Linked List");
+            return;
+        }
+        Node temp=node;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        return;
+    }
+
     public static void main(String[] args) {
-        String s="A man, a plan, a canal: Panama";
-        boolean ans=palindrome(s);
-        System.out.print(ans);
+        System.out.print("Enter number of nodes:- ");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.print("Enter elements:- ");
+        for(int i=0;i<n;i++){
+            int val=sc.nextInt();
+            insert(val);
+        }
+        Node node=reverse(head);
+        print(node);
     }
 }
