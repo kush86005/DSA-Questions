@@ -3,69 +3,37 @@ import java util.*;
 public class temp {
     public static class Node{
         int data;
-        Node left;
-        Node right;
+        Node next;
 
         Node(int data){
             this.data=data;
-            this.left=null;
-            this.right=null;
+            this.next=null;
         }
     }
-    static Node root=null;
+    static Node head=null;
+    static Node tail=null;
     public static void insert(int data){
-        root=recursion(root,data);
+        Node val=new Node(data);
+        if(head==null){
+            head=val;
+            tail=head;
+        }else{
+            tail.next=val;
+            tail=val;
+        }
     }
-    public static Node recursion(Node root,int data){
-        if(root==null){
-            return new Node(data);
-        }
-        if(data<root.data){
-            root.left=recursion(root.left,data);
-        }
-        if(data>root.data){
-            root.right=recursion(root.right,data);
-        }
-        return root;
-    }
-    public static Node LCA(Node root,int n1,int n2){
+    public static Node reverse(Node root){
         if(root==null){
             return null;
         }
-        if(root.data==n1||root.data==n2){
-            return root;
+        Node prev=null;
+        Node curr=root;
+        while(curr!=null){
+            Node temp=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=temp;
         }
-        Node left=LCA(root.left,n1,n2);
-        Node right=LCA(root.right,n1,n2);
-        if(left!=null&&right!=null){
-            return root;
-        }
-        if(left==null){
-            return right;
-        }else{
-            return left;
-        }
-    }
-    public static List<List<Integer>> LevelOrderTraversal(Node root){
-        List<List<Integer>> ans=new LinkedList<>();
-        Queue<Node> queue=new LinkedList<>();
-        queue.offer(root);
-        while(!queue.isEmpty()){
-            List<Integer> list=new LinkedList<>();
-            int n=queue.size();
-            for(int i=0;i<n;i++){
-                Node temp=queue.poll();
-                list.add(temp.data);
-
-                if(temp.left!=null){
-                    queue.offer(temp.left);
-                }
-                if(temp.right!=null){
-                    queue.offer(temp.right);
-                }
-            }
-            ans.add(list);
-        }
-        return ans;
+        return prev;
     }
 }
