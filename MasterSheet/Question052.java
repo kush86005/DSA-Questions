@@ -50,7 +50,7 @@ public class Question052 {
     public static int AlternateFunction(Node root,int k) {
         Stack<Node> stack = new Stack<>();
 
-        while (true) {
+        while (root != null || !stack.isEmpty()) { // <-- not while(true)
             while (root != null) {
                 stack.push(root);
                 root = root.left;
@@ -60,9 +60,9 @@ public class Question052 {
             if (k == 0) {
                 return root.data;
             }
-            root=root.right;
+            root = root.right;
         }
-        return -1 //If K is invalid
+        return -1; // K is invalid
     }
 
     public static void main(String[] args) {
